@@ -10,6 +10,7 @@
 #if (defined(_POSIX_)||!defined(WIN32))		/* Change for Windows NT */
 #ifndef DOS
 #include <unistd.h>
+#include <sys/types.h>
 #include <sys/wait.h>
 #endif
 

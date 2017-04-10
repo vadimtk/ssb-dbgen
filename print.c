@@ -87,7 +87,7 @@ dbg_print(int format, FILE *target, void *data, int len, int sep)
 		if (columnar)
 			fprintf(target, "%-*s", len, (char *)data);
 		else
-			fprintf(target, "%s", (char *)data);
+			fprintf(target, "\"%s\"", (char *)data);
 		break;
 #ifdef MVS
 	case DT_VSTR:
